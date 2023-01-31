@@ -22,32 +22,16 @@ const styles = StyleSheet.create({
   },
 });
 
-const Item = ({title, image}) => (
+const Item = ({title, image}: {title: string; image: string}) => (
   <View style={styles.itemContainer}>
-    <Image
-      style={styles.itemImage}
-      source={{uri: image}}
-      cache={'only-if-cached'}
-    />
+    <Image style={styles.itemImage} source={{uri: image}} />
     <Text style={styles.itemTitle}>{title}</Text>
   </View>
 );
 
 const data = [
-  {
-    title: 'title 1',
-    image: `https://picsum.photos/200?random=${Math.random()}`,
-  },
-  {
-    title: 'title 2',
-    image: `https://picsum.photos/200?random=${Math.random()}`,
-  },
-  {
-    title: 'title 3',
-    image: `https://picsum.photos/200?random=${Math.random()}`,
-  },
-  ...Array.from({length: 100}, (_, i) => ({
-    title: `title ${i + 4}`,
+  ...Array.from({length: 200}, (_, i) => ({
+    title: `title ${i + 1}`,
     image: `https://picsum.photos/200?random=${Math.random()}`,
   })),
 ];
@@ -73,3 +57,4 @@ const App = () => {
 };
 
 export default App;
+

@@ -1,7 +1,7 @@
 # React Native Lazy Loading FlatList with Random Images and Caching
 
 ## Introduction
-This code creates a two-column FlatList component in React Native that displays a list of items with random images, lazy loading, and caching. Each item in the list includes a title and a unique random image. The images are loaded lazily and cached to improve performance.
+This code creates a two-column FlatList component in React Native that displays a list of items with random images, lazy loading. Each item in the list includes a title and a unique random image. The images are loaded lazily and cached to improve performance.
 
 ## Data
 The data for the list is an array of objects, each with a title and an image property:
